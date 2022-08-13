@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        #maincontainer {
+            height: 400px;
+            width: 400px;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="maincontainer">
+
+        <h1>Game Result</h1>
+        <div id="outer">
+            <h2 id="output"> </h2>
+            <h2 id="String"></h2>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<script>
+
+
+
+    let result = document.getElementById("output")
+    let string = document.getElementById("String")
+
+    let a = sessionStorage.getItem("mumbai")
+    let b = sessionStorage.getItem("delhi")
+    console.log(b)
+
+    result.innerHTML = "Your Total Score is"+" " + ":" + a;
+    string.innerHTML = "Your String is"+" " + ":" + b;
+</script>
